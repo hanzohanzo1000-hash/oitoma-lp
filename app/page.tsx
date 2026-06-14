@@ -124,7 +124,7 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-4xl text-4xl font-medium leading-[1.08] tracking-[-0.04em] text-white sm:text-6xl sm:leading-[1.02] lg:text-7xl">
-            決算資料を60秒で理解する。
+            決算資料を読む時間を、60秒に。
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/55 sm:text-xl">
