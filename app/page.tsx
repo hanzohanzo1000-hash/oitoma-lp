@@ -1,3 +1,5 @@
+import { WaitlistForm } from "@/components/waitlist-form";
+
 const features = [
   {
     title: "Earnings summaries",
@@ -107,7 +109,7 @@ export default function Home() {
               href="#waitlist"
               className="rounded-full border border-white/15 px-4 py-2 text-sm text-white/80 transition-colors hover:border-white/30 hover:text-white"
             >
-              Join waitlist
+              無料で先行登録
             </a>
           </nav>
         </header>
@@ -117,28 +119,21 @@ export default function Home() {
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
               <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/50">
-                Now accepting early access
+              先行登録受付中
               </span>
             </div>
 
             <h1 className="max-w-4xl text-4xl font-medium leading-[1.08] tracking-[-0.04em] text-white sm:text-6xl sm:leading-[1.02] lg:text-7xl">
-              Understand any earnings report in under 60 seconds.
+            決算資料を60秒で理解する。
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/55 sm:text-xl">
-              Built for investors who value time.
+            長い決算資料をAIが要約。
+            投資判断に必要なポイントだけを瞬時に把握。
             </p>
 
-            <div id="waitlist" className="mt-10 flex flex-col items-center gap-4">
-              <a
-                href="#"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-medium text-black shadow-[0_0_40px_rgba(255,255,255,0.12)] transition-all hover:opacity-90 hover:shadow-[0_0_60px_rgba(255,255,255,0.18)]"
-              >
-                Join the waitlist
-              </a>
-              <p className="text-sm text-white/35">
-                Early access opening soon. No spam.
-              </p>
+            <div id="waitlist" className="mt-10 w-full max-w-md">
+              <WaitlistForm source="hero" variant="hero" />
             </div>
 
             {/* Product preview */}
@@ -314,12 +309,7 @@ export default function Home() {
                   Join the waitlist and be first when we open access for the
                   next earnings season.
                 </p>
-                <a
-                  href="#waitlist"
-                  className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-medium text-black transition-opacity hover:opacity-90"
-                >
-                  Join the waitlist
-                </a>
+                <WaitlistForm source="cta" variant="cta" />
               </div>
             </div>
           </section>
