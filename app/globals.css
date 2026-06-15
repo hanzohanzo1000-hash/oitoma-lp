@@ -2,25 +2,79 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #3d2c1e;
+  --muted: #7a6555;
+  --brand-orange: #f07a07;
+  --brand-orange-dark: #d96800;
+  --brand-yellow: #ffd035;
+  --brand-pink: #f06292;
+  --brand-cream: #fff8f0;
+  --brand-peach: #fff0e0;
+  --line-green: #06c755;
+  --line-green-hover: #05b34c;
+  --border: #fde8cc;
+  --surface: #fff8f0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-dark: var(--brand-orange-dark);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-pink: var(--brand-pink);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-peach: var(--brand-peach);
+  --color-line-green: var(--line-green);
+  --color-line-green-hover: var(--line-green-hover);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-zen-maru);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-zen-maru), "Hiragino Maru Gothic ProN", "Hiragino Sans",
+    sans-serif;
+}
+
+.pop-shadow {
+  box-shadow: 4px 4px 0 var(--brand-yellow);
+}
+
+.pop-shadow-sm {
+  box-shadow: 3px 3px 0 var(--brand-yellow);
+}
+
+.pop-shadow-lg {
+  box-shadow: 6px 6px 0 var(--brand-yellow);
+}
+
+.pop-text {
+  color: var(--brand-orange);
+  text-shadow: 3px 3px 0 var(--brand-yellow);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-4deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 4s ease-in-out 1.5s infinite;
 }
