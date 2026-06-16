@@ -1,3 +1,6 @@
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kirikae.jp";
+
 export const SITE_NAME = "退職代行キリカエ";
 export const SITE_TAGLINE = "会社と話さず、次の一歩へ。";
 export const SITE_TITLE = "退職代行キリカエ｜会社と話さず、次の一歩へ";
@@ -23,4 +26,15 @@ export const NAV_LINKS = [
   { href: "#pricing", label: "料金プラン" },
   { href: "#flow", label: "ご利用の流れ" },
   { href: "#faq", label: "よくある質問" },
+] as const;
+
+export const SEO_KEYWORDS = [
+  "退職代行",
+  "退職代行 キリカエ",
+  "退職 相談",
+  "退職 言い出せない",
+  "即日退職",
+  "LINE 退職代行",
+  "退職代行 安い",
+  "退職代行 全国対応",
 ] as const;

@@ -10,31 +10,20 @@ import { MobileCta } from "@/components/oitoma/mobile-cta";
 import { Pricing } from "@/components/oitoma/pricing";
 import { Problem } from "@/components/oitoma/problem";
 import { Promise } from "@/components/oitoma/promise";
-import { LINE_URL, SITE_DESCRIPTION, SITE_NAME } from "@/lib/constants";
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: SITE_NAME,
-  description: SITE_DESCRIPTION,
-  url: "https://kirikae.jp",
-  areaServed: "JP",
-  serviceType: "退職代行",
-  availableChannel: {
-    "@type": "ServiceChannel",
-    serviceUrl: LINE_URL,
-    servicePhone: "",
-    availableLanguage: "Japanese",
-  },
-};
+import { getStructuredDataScripts } from "@/lib/json-ld";
 
 export default function Home() {
+  const structuredDataScripts = getStructuredDataScripts();
+
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {structuredDataScripts.map((jsonLd) => (
+        <script
+          key={jsonLd["@type"]}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      ))}
 
       <div className="flex min-h-screen flex-col pb-[calc(5.5rem+env(safe-area-inset-bottom))] md:pb-0">
         <Header />

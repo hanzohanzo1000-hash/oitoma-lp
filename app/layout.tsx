@@ -7,9 +7,11 @@ import {
   OGP_DESCRIPTION,
   OGP_IMAGE,
   OGP_TITLE,
+  SEO_KEYWORDS,
   SITE_DESCRIPTION,
   SITE_NAME,
   SITE_TITLE,
+  SITE_URL,
 } from "@/lib/constants";
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -21,28 +23,33 @@ const zenMaru = Zen_Maru_Gothic({
   display: "swap",
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kirikae.jp";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
     template: `%s｜${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
-  keywords: [
-    "退職代行",
-    "退職代行 キリカエ",
-    "退職 相談",
-    "退職 言い出せない",
-    "即日退職",
-    "LINE 退職代行",
-    "退職代行 安い",
-    "退職代行 全国対応",
-  ],
+  applicationName: SITE_NAME,
+  keywords: [...SEO_KEYWORDS],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  category: "business",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   alternates: {
-    canonical: "/",
+    canonical: SITE_URL,
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     title: OGP_TITLE,
@@ -50,13 +57,14 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     type: "website",
     siteName: SITE_NAME,
-    url: siteUrl,
+    url: SITE_URL,
     images: [
       {
         url: OGP_IMAGE,
         width: 1200,
         height: 630,
         alt: OGP_TITLE,
+        type: "image/png",
       },
     ],
   },
@@ -69,6 +77,12 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
