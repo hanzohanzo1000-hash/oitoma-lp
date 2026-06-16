@@ -9,10 +9,27 @@ import Recommend from "@/components/tenshoku/Recommend";
 import FAQ from "@/components/tenshoku/FAQ";
 import CTA from "@/components/tenshoku/CTA";
 
+const TENSHOKU_TITLE = "転職サポート キリカエ";
+const TENSHOKU_DESCRIPTION =
+  "自分に合った仕事、一緒に見つけませんか？";
+
 export const metadata: Metadata = {
-  title: "20代のキャリア相談 | LINE無料相談",
-  description:
-    "自分に合った仕事がわからない、給与を上げたい、転職が初めてで不安——20代のキャリア選択を無料サポート。LINE相談から無料面談まで。",
+  title: {
+    absolute: TENSHOKU_TITLE,
+  },
+  description: TENSHOKU_DESCRIPTION,
+  openGraph: {
+    title: TENSHOKU_TITLE,
+    description: TENSHOKU_DESCRIPTION,
+    url: "/tenshoku",
+  },
+  twitter: {
+    title: TENSHOKU_TITLE,
+    description: TENSHOKU_DESCRIPTION,
+  },
+  alternates: {
+    canonical: "/tenshoku",
+  },
 };
 
 export default function TenshokuPage() {
