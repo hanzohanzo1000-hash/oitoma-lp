@@ -12,6 +12,8 @@ import {
   SITE_TITLE,
 } from "@/lib/constants";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 const zenMaru = Zen_Maru_Gothic({
   variable: "--font-zen-maru",
   subsets: ["latin"],
@@ -21,8 +23,6 @@ const zenMaru = Zen_Maru_Gothic({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://kirikae.jp";
-
-const isProduction = process.env.NODE_ENV === "production";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
