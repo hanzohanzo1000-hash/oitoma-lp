@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
 import {
+  GA_MEASUREMENT_ID,
   OGP_DESCRIPTION,
   OGP_IMAGE,
   OGP_TITLE,
@@ -19,6 +21,8 @@ const zenMaru = Zen_Maru_Gothic({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://kirikae.jp";
+
+const isProduction = process.env.NODE_ENV === "production";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -75,7 +79,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${zenMaru.variable} scroll-smooth`}>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        {children}
+        {isProduction && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
+      </body>
     </html>
   );
 }
