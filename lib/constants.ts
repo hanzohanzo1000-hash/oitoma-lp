@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kirikae.jp";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kirikae-support.com";
 
 export const SITE_NAME = "退職代行キリカエ";
 export const SITE_TAGLINE = "会社と話さず、次の一歩へ。";

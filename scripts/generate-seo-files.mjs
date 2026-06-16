@@ -2,7 +2,7 @@ import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kirikae.jp"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kirikae-support.com"
 ).replace(/\/$/, "");
 
 const pages = [
