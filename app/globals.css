@@ -30,11 +30,22 @@
   --color-line-green-hover: var(--line-green-hover);
   --color-border: var(--border);
   --color-surface: var(--surface);
+  --color-brand-bg: #ebf4fd;
+  --color-brand-blue: #0ea5e9;
+  --color-brand-muted: #64748b;
+  --color-brand-pop: #1e3a5f;
+  --color-brand-pop-hover: #172554;
+  --shadow-pop: 3px 3px 0 0 var(--color-brand-pop);
+  --shadow-pop-hover: 4px 4px 0 0 var(--color-brand-pop-hover);
   --font-sans: var(--font-zen-maru);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
 }
 
 body {
