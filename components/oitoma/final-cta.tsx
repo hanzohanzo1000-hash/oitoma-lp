@@ -19,7 +19,7 @@ export function FinalCta() {
         <div className="mx-auto mt-6 max-w-lg space-y-3 text-base leading-relaxed text-muted sm:text-lg">
           <p>退職を言い出せない不安やストレスを抱えている方へ。</p>
           <p className="font-medium text-foreground">
-            オイトマがあなたの新しい一歩をサポートします。
+            キリカエがあなたの新しい一歩をサポートします。
           </p>
         </div>
 

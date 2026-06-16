@@ -18,7 +18,7 @@ const zenMaru = Zen_Maru_Gothic({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://oitoma.jp";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kirikae.jp";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   keywords: [
     "退職代行",
-    "退職代行 オイトマ",
+    "退職代行 キリカエ",
     "退職 相談",
     "退職 言い出せない",
     "即日退職",

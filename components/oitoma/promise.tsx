@@ -16,7 +16,7 @@ export function Promise() {
             Promise
           </span>
           <h2 className="mt-4 text-2xl font-bold tracking-tight text-white sm:text-3xl">
-            オイトマの約束
+            キリカエの約束
           </h2>
         </div>
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SITE_NAME } from "@/lib/constants";
 
 type LogoProps = {
   className?: string;
@@ -23,7 +24,7 @@ export function Logo({
   return (
     <Image
       src="/logo.png"
-      alt="退職代行オイトマ"
+      alt={SITE_NAME}
       width={width}
       height={height}
       className={`block object-contain object-left ${variantClasses[variant]} ${className}`}

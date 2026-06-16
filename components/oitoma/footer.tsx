@@ -1,5 +1,5 @@
 import { Logo } from "@/components/oitoma/logo";
-import { SITE_TAGLINE } from "@/lib/constants";
+import { SITE_NAME, SITE_TAGLINE } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -10,7 +10,7 @@ export function Footer() {
           <p className="text-sm text-muted">{SITE_TAGLINE}</p>
         </div>
         <p className="text-xs text-muted">
-          © {new Date().getFullYear()} 退職代行オイトマ. All rights reserved.
+          © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
         </p>
       </div>
     </footer>

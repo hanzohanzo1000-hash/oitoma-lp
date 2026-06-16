@@ -19,7 +19,7 @@ const steps = [
   {
     step: 4,
     title: "会社へご連絡",
-    description: "オイトマが代わりに会社へ退職の意思をお伝えします。",
+    description: "キリカエが代わりに会社へ退職の意思をお伝えします。",
   },
   {
     step: 5,

@@ -1,9 +1,9 @@
-export const SITE_NAME = "退職代行オイトマ";
+export const SITE_NAME = "退職代行キリカエ";
 export const SITE_TAGLINE = "会社と話さず、次の一歩へ。";
-export const SITE_TITLE = "退職代行オイトマ｜会社と話さず、次の一歩へ";
+export const SITE_TITLE = "退職代行キリカエ｜会社と話さず、次の一歩へ";
 export const SITE_DESCRIPTION =
   "退職を言い出せない方のための退職代行サービス。LINEで無料相談受付中。全国対応。";
-export const OGP_TITLE = "退職代行オイトマ";
+export const OGP_TITLE = "退職代行キリカエ";
 export const OGP_DESCRIPTION = "会社と話さず、次の一歩へ。";
 export const OGP_IMAGE = "/og-image.png";
 export const LINE_URL =
@@ -16,7 +16,7 @@ export const PRICING_PLANS = [
 ] as const;
 
 export const NAV_LINKS = [
-  { href: "#about", label: "オイトマとは" },
+  { href: "#about", label: "キリカエとは" },
   { href: "#features", label: "選ばれる理由" },
   { href: "#pricing", label: "料金プラン" },
   { href: "#flow", label: "ご利用の流れ" },

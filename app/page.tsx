@@ -17,7 +17,7 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: SITE_NAME,
   description: SITE_DESCRIPTION,
-  url: "https://oitoma.jp",
+  url: "https://kirikae.jp",
   areaServed: "JP",
   serviceType: "退職代行",
   availableChannel: {

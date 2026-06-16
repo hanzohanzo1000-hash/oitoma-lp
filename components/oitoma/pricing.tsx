@@ -43,7 +43,7 @@ export function Pricing() {
             なぜ低価格なのか？
           </h3>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted sm:text-base sm:leading-loose">
-            オイトマは少人数体制で運営しており、
+            キリカエは少人数体制で運営しており、
             <br className="hidden sm:block" />
             広告費や大規模な運営コストを抑えることで
             <br className="hidden sm:block" />
