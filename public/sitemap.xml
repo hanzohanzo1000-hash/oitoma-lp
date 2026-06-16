@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kirikae.jp/</loc>
-    <lastmod>2026-06-16T23:49:01.111Z</lastmod>
+    <loc>https://www.kirikae-support.com/</loc>
+    <lastmod>2026-06-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kirikae.jp/tenshoku</loc>
-    <lastmod>2026-06-16T23:49:01.111Z</lastmod>
+    <loc>https://www.kirikae-support.com/tenshoku</loc>
+    <lastmod>2026-06-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
